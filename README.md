@@ -29,7 +29,7 @@ macOS 的存储空间把既不属于 App、也不属于文档/照片的残留统
 ## 安装
 
 ```bash
-git clone https://github.com/AyaseElibing/macos-system-data-cleaner.git
+git clone https://github.com/AyaseEli-Bing/macos-system-data-cleaner.git
 cd macos-system-data-cleaner
 chmod +x macos_systemdata_cleaner.sh
 ```
@@ -37,7 +37,7 @@ chmod +x macos_systemdata_cleaner.sh
 或单文件下载：
 
 ```bash
-curl -O https://raw.githubusercontent.com/AyaseElibing/macos-system-data-cleaner/main/macos_systemdata_cleaner.sh
+curl -O https://raw.githubusercontent.com/AyaseEli-Bing/macos-system-data-cleaner/main/macos_systemdata_cleaner.sh
 chmod +x macos_systemdata_cleaner.sh
 ```
 
