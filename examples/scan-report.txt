@@ -1,0 +1,85 @@
+
+════════════════════════════════════════════════════════════
+ 磁盘概况
+════════════════════════════════════════════════════════════
+  根卷：/dev/disk3s1s1  总容量 460Gi  已用 18Gi  可用 86Gi（18%）
+
+Time Machine 本地快照（系统数据常见元凶；请用 tmutil 清理，勿手动删）：
+  Snapshots for volume group containing disk /:
+  com.apple.TimeMachine.2026-09-18-165529.local
+  com.apple.TimeMachine.2026-09-18-175727.local
+  com.apple.TimeMachine.2026-09-19-102719.local
+  com.apple.os.update-5203530F8BB20B9DABC5CE76A0FFE87CCC885EE69B8A5488C24B458A7555E3AB
+  com.apple.os.update-6C06C55DF844EB8ABD9577673748B4F8F571E92CF69EF9F18840C56D60F1A6C996433FDFAFA6C529F69C863D3211FB64
+  com.apple.os.update-MSUPrepareUpdate
+
+════════════════════════════════════════════════════════════
+ 系统数据 · 可清理项扫描报告  (2026-09-19 11:21:56)
+════════════════════════════════════════════════════════════
+模式：只读（未删除任何文件）｜最小显示体积：5 MiB｜占位检测：开
+
+① 低风险 — 用户缓存 / 日志 / 临时文件（默认可安全回收）
+────────────────────────────────────────────────────────────────────────────────────────
+风险   占用      sudo   路径
+────────────────────────────────────────────────────────────────────────────────────────
+低风险 900.7 MB    -      $HOME/Library/Caches/com.microsoft.VSCode.ShipIt
+                            └ 用户应用缓存，应用会自动重建
+低风险 402.6 MB    -      $HOME/.npm/_cacache/content-v2
+                            └ npm 缓存
+低风险 214.6 MB    -      $HOME/Library/Caches/Qianwen
+                            └ 用户应用缓存，应用会自动重建
+低风险 169.7 MB    -      $HOME/Library/Caches/Homebrew
+                            └ 用户应用缓存，应用会自动重建
+低风险 82.6 MB     -      $HOME/Library/Caches/Homebrew/api
+                            └ Homebrew 下载缓存（brew cleanup 亦可）
+低风险 59.2 MB     -      $HOME/Library/Caches/Homebrew/downloads
+                            └ Homebrew 下载缓存（brew cleanup 亦可）
+低风险 50.8 MB     -      $HOME/Library/Caches/Microsoft Edge
+                            └ 用户应用缓存，应用会自动重建
+低风险 23.5 MB     -      $HOME/Library/Caches/com.apple.helpd
+                            └ 用户应用缓存，应用会自动重建
+低风险 15.8 MB     -      $HOME/Library/Caches/Homebrew/bootsnap
+                            └ Homebrew 下载缓存（brew cleanup 亦可）
+低风险 12.1 MB     -      $HOME/Library/Caches/Homebrew/portable-ruby-4.0.7.arm64_big_sur.bottle.tar.gz
+                            └ Homebrew 下载缓存（brew cleanup 亦可）
+低风险 10.0 MB     -      $HOME/Library/Caches/com.apple.appstoreagent
+                            └ 用户应用缓存，应用会自动重建
+低风险 8.7 MB      -      $HOME/Library/Caches/Adobe
+                            └ 用户应用缓存，应用会自动重建
+低风险 6.4 MB      -      $HOME/.npm/_cacache/index-v5
+                            └ npm 缓存
+────────────────────────────────────────────────────────────────────────────────────────
+小计：13 项，共 1.9 GB
+
+② 中风险 — 系统缓存 / 日志 / 开发产物（需 --risk medium 才允许清理）
+────────────────────────────────────────────────────────────────────────────────────────
+风险   占用      sudo   路径
+────────────────────────────────────────────────────────────────────────────────────────
+中风险 35.0 MB     需    /var/log/powermanagement
+                            └ 系统日志（需 sudo，仅删子项保留目录）
+中风险 14.6 MB     需    /var/log/com.apple.xpc.launchd
+                            └ 系统日志（需 sudo，仅删子项保留目录）
+中风险 11.5 MB     需    /Library/Logs/CrashReporter
+                            └ 系统级日志（需 sudo）
+中风险 9.0 MB      需    /var/log/install.log
+                            └ 系统日志（需 sudo，仅删子项保留目录）
+────────────────────────────────────────────────────────────────────────────────────────
+小计：4 项，共 70.2 MB
+
+③ 高风险 — 仅提示，脚本永不删除，请人工判断
+────────────────────────────────────────────────────────────────────────────────────────
+风险   占用      sudo   路径
+────────────────────────────────────────────────────────────────────────────────────────
+高风险 2.3 GB      需    /private/var/folders
+                            └ 系统临时与缓存根（结构敏感，勿手动删）
+────────────────────────────────────────────────────────────────────────────────────────
+小计：1 项，共 2.3 GB
+
+汇总
+  可安全回收（低风险）：1.9 GB
+  谨慎回收（中风险）  ：70.2 MB
+  仅提示（高风险）    ：2.3 GB
+  ──────────────────────────────
+  扫描命中总量        ：4.3 GB
+
+下一步：--plan 生成方案脚本；--clean 逐项确认清理（回车=跳过）；--trash 改用废纸篓。

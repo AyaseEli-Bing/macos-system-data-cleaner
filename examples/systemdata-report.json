@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-09-19 11:21:02",
+  "mode": "plan",
+  "max_risk": "low",
+  "items": [
+    {"path": "/private/var/folders", "size_mb": 2329, "risk": "high", "note": "系统临时与缓存根（结构敏感，勿手动删）", "needs_sudo": 1, "cleanable": false, "protected": false},
+    {"path": "$HOME/Library/Caches/com.microsoft.VSCode.ShipIt", "size_mb": 900, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/.npm/_cacache/content-v2", "size_mb": 402, "risk": "low", "note": "npm 缓存", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Qianwen", "size_mb": 214, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Homebrew", "size_mb": 169, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Homebrew/api", "size_mb": 82, "risk": "low", "note": "Homebrew 下载缓存（brew cleanup 亦可）", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Homebrew/downloads", "size_mb": 59, "risk": "low", "note": "Homebrew 下载缓存（brew cleanup 亦可）", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Microsoft Edge", "size_mb": 50, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/com.apple.helpd", "size_mb": 23, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Homebrew/bootsnap", "size_mb": 15, "risk": "low", "note": "Homebrew 下载缓存（brew cleanup 亦可）", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Homebrew/portable-ruby-4.0.7.arm64_big_sur.bottle.tar.gz", "size_mb": 12, "risk": "low", "note": "Homebrew 下载缓存（brew cleanup 亦可）", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/com.apple.appstoreagent", "size_mb": 10, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/Library/Caches/Adobe", "size_mb": 8, "risk": "low", "note": "用户应用缓存，应用会自动重建", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "$HOME/.npm/_cacache/index-v5", "size_mb": 6, "risk": "low", "note": "npm 缓存", "needs_sudo": 0, "cleanable": true, "protected": false},
+    {"path": "/var/log/powermanagement", "size_mb": 35, "risk": "medium", "note": "系统日志（需 sudo，仅删子项保留目录）", "needs_sudo": 1, "cleanable": true, "protected": false},
+    {"path": "/var/log/com.apple.xpc.launchd", "size_mb": 14, "risk": "medium", "note": "系统日志（需 sudo，仅删子项保留目录）", "needs_sudo": 1, "cleanable": true, "protected": false},
+    {"path": "/Library/Logs/CrashReporter", "size_mb": 11, "risk": "medium", "note": "系统级日志（需 sudo）", "needs_sudo": 1, "cleanable": true, "protected": false},
+    {"path": "/var/log/install.log", "size_mb": 9, "risk": "medium", "note": "系统日志（需 sudo，仅删子项保留目录）", "needs_sudo": 1, "cleanable": true, "protected": false}
+  ]
+}
