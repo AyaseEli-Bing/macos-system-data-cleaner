@@ -1,5 +1,7 @@
 # macOS System Data Cleaner
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) ![Shell](https://img.shields.io/badge/shell-bash%2Fzsh-4eaa25.svg) ![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg) ![Safe](https://img.shields.io/badge/delete-default%20off-3fb950.svg)
+
 定位并回收 macOS「**系统数据** (System Data)」占用空间 —— 一个**只读优先、默认不删除**的 Bash/Zsh 清理工具。
 
 macOS 的存储空间把既不属于 App、也不属于文档/照片的残留统称为「系统数据」：缓存、日志、临时文件、构建产物、模拟器数据、Time Machine 本地快照……它可能悄悄吃掉几十上百 GB，而系统自带的「存储管理」又语焉不详。
